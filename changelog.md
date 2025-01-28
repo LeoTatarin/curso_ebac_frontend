@@ -33,3 +33,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Link para GitHub na homepage
 - Links para todas as outras paginas disponivel apenas na homepage
+- Iniciando configuração de display via CSS 
