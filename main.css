@@ -7,3 +7,10 @@ body{
 .botaolimpar{
     background-color: rgba(255, 0, 0, 0.89);
 }
+h1 {
+    color: rgb(2, 15, 49);
+}
+
+h2{
+    color: rgb(8, 41, 70);
+}
