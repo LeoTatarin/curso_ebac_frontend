@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;/* Ajuda a mantar o tamanho das boxes dentro do esperado*/
+    margin: 0;
+    padding: 0;
+}
+
+.padrao {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.artigos .container {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os artigos */
+}
+
+article {
+    flex: 1; /* Faz os artigos crescerem de forma igual */
+    max-width: 300px; /* Limita a largura de cada artigo */
+    text-align: center; /* Centraliza o conteúdo de cada artigo */
+}
