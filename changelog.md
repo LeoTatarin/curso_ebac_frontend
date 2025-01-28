@@ -18,3 +18,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Pagina explicativa tabelas.html
 - Pagina explicativa midias.html
 
+### Adicionados
+
+- Todas as paginas recursos basicos de CSS
+
+## [0.0.2] - 2025-01-28
+
+### Criadas
+
+- Nova Pagina Home
+- Antiga home virou estrutura basica de HTML
+
+### Adicionados
+
+- Link para GitHub na homepage
+- Links para todas as outras paginas disponivel apenas na homepage
