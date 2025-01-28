@@ -1,32 +1,12 @@
-body{
-    background-color: rgba(18, 85, 230, 0.411); /*Definindo a cor do fundo da tela*/
-}
-.botaovalidar{
-    background-color: rgba(9, 255, 0, 0.74); /* Definindo a cor de fundo do botão*/
-}
-.botaolimpar{
-    background-color: rgba(255, 0, 0, 0.89);
-}
-h1 {
-    color: rgb(2, 15, 49); /* Definindo a cor para todo h1*/
-}
-
-h2{
-    color: rgb(8, 41, 70); /* Definindo a cor para too h2*/
-}
-
-#cabeçalho h1{
-    color: beige; /* Definindo a cor para h1 com id especifica*/
-}
-
-.datadecriacao {
-    color: rgb(73, 73, 73); /* Definindo cor para classe*/
-}
-
-#gitlink h3{
-    color: red;
-}
-
 *{
-    color: rgba(83, 11, 11, 0.712); /*Definindo cor para tudo nao que nao especificado*/
+    color: rgba(0, 0, 0, 0.712); /*Definindo cor para tudo nao que nao especificado*/
+    box-sizing: border-box;/* Ajuda a mantar o tamanho das boxes dentro do esperado*/
+    margin: 0;
+    padding: 0;
 }
+
+.padrao {
+    width: 1366px;
+    margin: 0 auto;
+}
+
