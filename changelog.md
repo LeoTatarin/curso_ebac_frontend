@@ -9,12 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.0.1] - 2025-01-27
 
-### Added
+### Criadas
 
-- This CHANGELOG file to hopefully serve as an evolving example of a
-  standardized open source project CHANGELOG.
-- CNAME file to enable GitHub Pages custom domain.
-- README now contains answers to common questions about CHANGELOGs.
-- Good examples and basic guidelines, including proper date formatting.
-- Counter-examples: "What makes unicorns cry?".
+- Pagina explicativa index.html
+- Pagina explicativa containers.html
+- Pagina explicativa formularios.html
+- Pagina explicativa listas
+- Pagina explicativa tabelas.html
+- Pagina explicativa midias.html
 
