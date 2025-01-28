@@ -1,0 +1,9 @@
+body{
+    background-color: rgba(18, 85, 230, 0.411);
+}
+.botaovalidar{
+    background-color: rgba(9, 255, 0, 0.74);
+}
+.botaolimpar{
+    background-color: rgba(255, 0, 0, 0.89);
+}
