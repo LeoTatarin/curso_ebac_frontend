@@ -8,12 +8,17 @@ body > header{ /* afeta apenas o header filho direto de body*/
     background-color: rgb(255, 0, 0);
     padding : 16px 16px ;/* topo e laterais*/
     color:white;
+    font-size: 25px;
+    font-family: arial, sans-serif;
 }
 
 header .container nav a{
     color: white ;
     padding: 5px;
     text-decoration: none;
+    font-weight: 500;
+    font-family: arial, sans-serif;
+    font-size: 16px;
 }
 
 header .container nav a:hover{ /*aplica efeito ao passar o mouse sobre*/
@@ -32,13 +37,14 @@ margin: 0 auto;
 }
 
 section .artigos{
-    display: flex;
-    flex-wrap: wrap;
+    display: flex; /*define os itens da section em linha*/
+    flex-wrap: wrap; /* faz a quebra de linha ao chegar ao fim da tela*/
     justify-content: space-between;
 }
 
 .artigos article img{
-    height: 300px;
+   /* height: 300px; tamanho fixo, vamos alterar para tamanho variavel com o tamanho do article*/
+   width: 100%;
 }
 
 .artigos article {
@@ -64,6 +70,7 @@ section h3, .artigos article{
     color: white;
     padding: 5px;
     display: inline-block;
+    font-weight: bold; /*define fonte em negrito ou não*/
 }
 
 .artigos article a:hover{ /*aplica efeito ao passar mouse sobre*/
@@ -82,7 +89,7 @@ section h3, .artigos article{
     font-family: arial, sans-serif;
 }
 
-.container h3{
+.container h3{  /* SEÇAO 1 E SEÇÃO 2, TITULOS*/
     font-size: 23px;
     font-family: arial, sans-serif;
     margin-top: 30px;
