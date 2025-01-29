@@ -16,7 +16,7 @@ header .container nav a{
     text-decoration: none;
 }
 
-header .container nav a:hover{
+header .container nav a:hover{ /*aplica efeito ao passar o mouse sobre*/
     text-decoration: underline;
 }
 
@@ -38,7 +38,7 @@ section .artigos{
 }
 
 .artigos article img{
-    height: 180px;
+    height: 300px;
 }
 
 .artigos article {
@@ -85,4 +85,13 @@ section h3, .artigos article{
 .container h3{
     font-size: 23px;
     font-family: arial, sans-serif;
+    margin-top: 30px;
+}
+
+#secao1{
+    background-color: rgba(255,0,0,0.05);
+}
+
+#secao2{
+    background-color: rgba(255,0,0,0.05);
 }
