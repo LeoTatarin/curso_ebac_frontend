@@ -13,7 +13,13 @@ body > header{ /* afeta apenas o header filho direto de body*/
 header .container nav a{
     color: white ;
     padding: 5px;
+    text-decoration: none;
 }
+
+header .container nav a:hover{
+    text-decoration: underline;
+}
+
 
 header .container{
     display: flex;
@@ -60,8 +66,23 @@ section h3, .artigos article{
     display: inline-block;
 }
 
+.artigos article a:hover{ /*aplica efeito ao passar mouse sobre*/
+    text-decoration: underline;
+}
+
 .artigos article p,
 .artigos article a{
     font-family: arial, Helvetica, sans-serif;
     margin-bottom: 2px;
+    font-size: 15px;
+}
+
+.artigos article h4{
+    font-size: 19px;
+    font-family: arial, sans-serif;
+}
+
+.container h3{
+    font-size: 23px;
+    font-family: arial, sans-serif;
 }
