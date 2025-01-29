@@ -68,7 +68,7 @@ section h3, .artigos article{
 .artigos article a{
     background-color: red;
     color: white;
-    padding: 5px;
+    padding: 10px;
     display: inline-block;
     font-weight: bold; /*define fonte em negrito ou não*/
 }
@@ -80,8 +80,9 @@ section h3, .artigos article{
 .artigos article p,
 .artigos article a{
     font-family: arial, Helvetica, sans-serif;
-    margin-bottom: 2px;
+    margin-bottom: 15px;
     font-size: 15px;
+    text-align: justify;
 }
 
 .artigos article h4{
@@ -96,9 +97,33 @@ section h3, .artigos article{
 }
 
 #secao1{
-    background-color: rgba(255,0,0,0.05);
+    background-color: rgba(150,0,0,0.4);
+}
+
+#secao1 a{
+    background-color: rgba(255,0,0,1);
 }
 
 #secao2{
-    background-color: rgba(255,0,0,0.05);
+    background-color: rgba(0,150,0,0.4);
+}
+
+#secao2 a{
+    background-color: rgba(0,255,0,1);
+}
+
+#secao3{
+    background-color: rgba(0,0,150,0.4);
+}
+
+#secao3 a{
+    background-color: rgba(0,0,255,1);
+}
+
+#secao4{
+    background-color: rgba(50,50,50,0.4);
+}
+
+#secao4 a{
+    background-color: rgba(50,50,50,1);
 }
