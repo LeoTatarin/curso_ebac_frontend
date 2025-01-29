@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     box-sizing: border-box; /* Ajuda a manter o tamanho esperado das boxes */
     margin: 0;
@@ -57,4 +58,65 @@ section h3, .artigos article{
     color: white;
     padding: 3px;
     display: inline-block;
+=======
+* {
+    box-sizing: border-box; /* Ajuda a manter o tamanho esperado das boxes */
+    margin: 0;
+    padding: 0;
+}
+body > header{ /* afeta apenas o header filho direto de body*/
+    background-color: aquamarine;
+    padding : 16px 16px ;/* topo e laterais*/
+    color:rgba(22, 61, 39, 0.616) ;
+}
+
+header .container nav a{
+    color: rgba(22, 61, 39, 0.616) ;
+    padding: 5px;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*cria o maior espaço possivel entre itens*/
+}
+.container {
+width: 1349px;
+margin: 0 auto;
+}
+
+section .artigos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.artigos article img{
+    height: 180px;
+}
+
+.artigos article {
+    width: 30%;
+}
+
+section {
+    padding: 16px;
+    background-color: rgba(127, 255, 212, 0.295);
+}
+
+section h3, .artigos article{
+    margin-bottom: 20px;
+}
+
+.artigos h4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.artigos article a{
+    background-color: rgba(2, 27, 19, 0.76);
+    color: white;
+    padding: 3px;
+    display: inline-block;
+>>>>>>> 2c33a1ada00dac454ef52f875d6fca42a97381d8
 }
