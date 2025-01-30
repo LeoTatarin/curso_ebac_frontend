@@ -1,0 +1,83 @@
+*{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Roboto", serif;
+}
+header,
+section h2{
+    font-family: "Bungee", serif;
+    font-weight: normal;
+}
+section{
+    color: #182c61;
+}
+
+header { 
+    padding: 16px 0px; /*espacamento topo o lateral*/
+    background-color: #182c61; /*cor do plano de fundo*/
+    color: #ecf0f1;  /*cor da fonte*/
+    align-items: center;
+}
+
+header h1{
+    font-weight: normal;
+    font-size: 50px;
+}
+
+header nav li{
+    display: inline; /*muda de um sobre o outro para um ao lado do outro*/
+    margin-left: 16px; /*margem dos textos a esquerda*/
+    size: 18px;
+}
+header nav li a{
+    color:#ecf0f1; /*cor da fonte*/
+    text-decoration: none; /*sem sublinhado*/
+}
+
+.container{
+    max-width: 1280px; /*tamanho maximo do container*/
+    width: 100%; /* porcentagem da tela*/
+    margin: auto auto; /* margem do topo e da lateral*/
+}
+
+header .container{
+    display: flex; /*organiza os itens do container de forma horizontal*/
+    align-items: center; /*alinha os itens no centro*/
+    justify-content: space-between;/* seta maior espacamento possivel*/
+}
+
+.brands-list img{
+    height: 24px;
+}
+
+.brands-list li{
+    display:inline;
+    margin-right: 8px;
+}
+
+section .container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 150px;
+}
+
+section {
+    padding: 24px 0px;
+}
+
+section h2{
+    margin-bottom: 16px;
+}
+
+section p{
+    margin-bottom: 8px;
+}
+
+.store-front{
+    margin-right: 32px;
+}
