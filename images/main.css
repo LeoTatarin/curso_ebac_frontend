@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box; /* Ajuda a manter o tamanho esperado das boxes */
+    margin: 0;
+    padding: 0;
+}
+
+/* ITENS HEADER */
+
+header { 
+    background-color: #2d3192; 
+    align-items: center;
+    padding: 15px 0;
+}
+
+#top-header{
+    background-color: #2d3192;
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 250px;
+    align-items: center;
+}
+
+#top-header nav ul {
+    justify-content: space-between;
+    display: flex;
+    list-style: none;
+}
+
+#top-header nav ul a{
+    text-decoration: none;
+    color: #fff;
+    font-family: "bebas-neue-regular", sans-serif;
+}
+
+#top-header nav ul li{
+    margin-right: 10px;
+}
+
+header li:hover{
+    text-decoration:underline;
+    color: #fff;
+}
+
+#bottom-header li:hover{
+    text-decoration:underline;
+    color: #2d3192;
+}
+
+header img{
+    height: 200px;
+}
+
+#bottom-header{
+    background-color: #fccb0d;
+    height: 50px;
+}
+
+#bottom-header nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin-left: 254px;
+    margin-right: 250px;
+    list-style: none;
+}
+
+#bottom-header nav ul a{
+    text-decoration: none;
+    color: #2d3192;
+    font-size: 18px;
+    font-weight: 550;
+    font-family: "bebas-neue-regular", sans-serif;
+    margin-right: 20px;
+    
+}
+
+/* ITENS CORPO DO SITE */
+
+
+.container{
+    display: flex;
+    align-items: center;
+    margin: 100px 250px;
+    font-family: "oswald", sans-serif;
+    font-weight: 300;
+    font-size: 19px;
+}
+
+.container img{
+    width: 450px;
+    margin-right: 15px;
+}
+
+.container h1{
+    font-size: 28px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    font-family: "bebas-neue-regular",sans-serif;
+}
+
+.container p{
+    margin-left: 15px;
+}
+
+.container p button{
+    width: 100px;
+    height: 33px;
+    margin-left: 0px;
+    font-size: 15px;
+    margin-top: 5px;
+} 
+
+/*FORMULARIO*/
+
+form input, textarea, button{
+    display:block;
+    width: 500px;
+    height: 45px;
+    margin-left: 12px;
+    margin-bottom: 15px;
+    font-family: "bebas-neue-regular", sans-serif;
+    font-size: 19px;
+}
+
+.container_contato li{
+display: inline;
+}
+.container_contato h2{
+    margin-left: 12px;
+}
+
+form textarea{
+    height: 200px;
+}
+
+.container_contato{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Garante que se ajustem caso a tela seja pequena */
+    gap: 20px;
+    width: 100%;
+}
+
+.container_contato h2{
+    margin-bottom: 20px;
+}
+
+
+.social img{
+    width: 80px;
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+button:hover{
+    background-color: #2b4ba5;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #2d3192;
+    color: #fff;
+    padding: 16px 0;
+}
+
