@@ -1,190 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    
-    <title>MT Representações</title>
-</head>
-
-<body>
-    <header>
-        <div id="top-header">
-            <img src="./cabecalho.png" alt="Imagem de cabeçalho">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about">Quem Somos</a>
-                    </li>
-                    <li>
-                    <a href="#contact">Fale Conosco</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div id="bottom-header">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#dewalt">DEWALT</a>
-                    </li>
-                    <li>
-                        <a href="#wacker">WACKER</a>
-                    </li>
-                    <li>
-                        <a href="#mecan">MECAN</a>
-                    </li>
-                    <li>
-                        <a href="#jacto">JACTO</a>
-                    </li>
-                    <li>
-                        <a href="#cid">CID</a>
-                    </li>
-                    <li>
-                        <a href="#pramac">PRAMAC</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>           
-    </header>
-    
-    <section id="about">
+<!--
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML com JS</title>
+        <link rel="stylesheet" href="./main.css">
+    </head>
+    <body>
         <div class="container">
-            <img class="imagens_do_site" src="./quem_somos.jpg" alt="imagem quem somos">
-            <div>
-                <h1>Quem Somos:</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit mollitia pariatur cumque reiciendis alias. Cum voluptate repudiandae reiciendis nihil delectus nisi modi vero reprehenderit. Praesentium harum consequatur deleniti fuga ab!
-                    <button type="button">Saiba mais</button>
-                </p>
-            </div>
+            <h1>EBAC Banking</h1>
+            <h2>Depósitos</h2>
+            <form id="form-deposito">
+                <input type="text" id="nome-beneficiario" required placeholder="Nome completo do beneficiário">
+                <input type="number" id="numero-conta" required placeholder="Número da conta">
+                <input type="number" id="valor-deposito" required placeholder="Valor">
+                <textarea placeholder="Descrição (opcional)" id="descricao"></textarea>
+                <button id="btn-depositar" type="submit">Depositar</button>
+            </form>
         </div>
-    </section>
-    <hr />
+        <script src="./main.js"></script>
+    </body>
+</html>
+<!-->
 
-    <section id="dewalt">
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML com JS</title>
+        <link rel="stylesheet" href="./main.css">
+    </head>
+    <body>
         <div class="container">
-            <img class="imagens_do_site" src="./dewalt_logo.png" alt="logo dewalt">
-            <div>
-                <h1>Dewalt:</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit mollitia pariatur cumque reiciendis alias. Cum voluptate repudiandae reiciendis nihil delectus nisi modi vero reprehenderit. Praesentium harum consequatur deleniti fuga ab!
-                    <button type="button">Saiba mais</button>
-                </p>
-            </div>
+            <h1>Maior ou Menor</h1>
+            <form id="form-maior-menor">
+                <input type="number" id="primeiro-numero" required placeholder = "Primeiro Numero">
+                <input type="number" id="segundo-numero" required placeholder = "Segundo Numero">
+                <button id="btn-verificar" type="submit"> Verificar </button>
+            </form>
         </div>
-    </section>
-    <hr />
-    
-    <section id="wacker">
-        <div class="container">
-            <img class="imagens_do_site" src="./wacker_logo.png" alt="logo wacker">
-            <div>
-                <h1>Wacker Neuson:</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit mollitia pariatur cumque reiciendis alias. Cum voluptate repudiandae reiciendis nihil delectus nisi modi vero reprehenderit. Praesentium harum consequatur deleniti fuga ab!
-                    <button type="button">Saiba mais</button>
-                </p>
-            </div>
-        </div>
-    </section>
-    <hr />
-
-    <section id="mecan">
-        <div class="container">
-            <img class="imagens_do_site" src="./mecan_logo.png" alt="logo mecan">
-            <div>
-                <h1>Mecan:</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit mollitia pariatur cumque reiciendis alias. Cum voluptate repudiandae reiciendis nihil delectus nisi modi vero reprehenderit. Praesentium harum consequatur deleniti fuga ab!
-                    <button type="button">Saiba mais</button>
-                </p>
-            </div>
-        </div>
-    </section>
-    <hr />
-
-    <section id="jacto">
-        <div class="container">
-            <img class="imagens_do_site" src="./jacto_logo.png" alt="logo jacto">
-            <div>
-                <h1>Jacto:</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit mollitia pariatur cumque reiciendis alias. Cum voluptate repudiandae reiciendis nihil delectus nisi modi vero reprehenderit. Praesentium harum consequatur deleniti fuga ab!
-                    <button type="button">Saiba mais</button>
-                </p>
-            </div>
-        </div>
-    </section>
-    <hr />
-
-    <section id="cid">
-        <div class="container">
-            <img class="imagens_do_site" src="./cid_logo.png" alt="logo cid">
-            <div>
-                <h1>Cid:</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit mollitia pariatur cumque reiciendis alias. Cum voluptate repudiandae reiciendis nihil delectus nisi modi vero reprehenderit. Praesentium harum consequatur deleniti fuga ab!
-                    <button type="button">Saiba mais</button>
-                </p>
-            </div>
-        </div>
-    </section>
-    <hr />
-
-    <section id="pramac">
-        <div class="container">
-            <img class="imagens_do_site" src="./pramac_logo.png" alt="logo pramac">
-            <div>
-                <h1>Pramac:</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit mollitia pariatur cumque reiciendis alias. Cum voluptate repudiandae reiciendis nihil delectus nisi modi vero reprehenderit. Praesentium harum consequatur deleniti fuga ab!
-                    <button type="button">Saiba mais</button>
-                </p>
-            </div>
-        </div>
-    </section>
-    <hr />
-
-    <section id="contact">
-        <div class="container">
-            <div class="container_contato">
-                    <div>
-                        <form>
-                            <h2>Fale Conosco:</h2>
-                            <input type="text" placeholder="Seu Nome:"required/>
-                            <input type="email" placeholder="Email:"required/>
-                            <input type="tel" placeholder="Telefone:"/>
-                            <textarea placeholder="Sua mensagem"required></textarea>
-                            <button type="submit">Enviar</button>
-                        </form>
-                    </div>
-                    <div>    
-                        <h2>Endereço:</h2>
-                        <p>Rua dos Bobos nº 0000, Centro, São Paulo, SP</p>
-                    </div>
-                    <div>    
-                        <h2>Nossas Redes:</h2>
-                        <ul class="social">
-                            <li>
-                                <img src="./instagram.png" alt="instagram">
-                            </li>
-                            <li>
-                                <img src="./facebook.png" alt="facebook">
-                            </li>
-                            <li>
-                                <img src="./youtube.png" alt="youtube">
-                            </li>
-                        </ul>
-                    </div>
-                    
-            </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>
-                &copy; MT Representações - Todos os direitos reservados - 2025
-            </p>
-        </div>
-    </footer>
-</body>
+        <script src="./main.js"></script>
+    </body>
 </html>
