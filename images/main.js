@@ -1,5 +1,5 @@
 
-const form = document.getElementById('form-atividade');
+/*const form = document.getElementById('form-atividade');
 let linhas = '';
 const imgAprovado = '<img src="./aprovado.png" alt = "Emoji celebrando" />';
 const imgReprovado = '<img src="./reprovado.png" alt = "Emoji triste" />';
@@ -21,8 +21,8 @@ form.addEventListener('submit', function(e){
 
 function adicionaLinha() {
 
-    const inputNomeAtividade=document.getElementById('nome-atividade');
-    const inputNotaAtividade=document.getElementById('nota-atividade');
+    const inputNomeContato=document.getElementById('nome-contato');
+    const inputNumero=document.getElementById('numero');
 
     if (atividades.includes(inputNomeAtividade.value)){
         alert(`A atividade: ${inputNomeAtividade.value} ja foi adicionada`);
@@ -66,4 +66,51 @@ function calculaMediaFinal(){
         somaDasNotas += notas[i];
     }
     return somaDasNotas / notas.length;
+}*/
+
+
+const form = document.getElementById('form-contatos');
+const contatos = [];
+const numero = [];
+let linhas = '';
+
+form.addEventListener('submit', function(e){
+    e.preventDefault();
+    
+    adicionaContato();
+    atualizaTabela();
+
+
+});  
+
+function adicionaContato(){
+
+    const inputNomeContato=document.getElementById('nome-contato');
+    const inputNumero=document.getElementById('numero');
+
+    if (contatos.includes(inputNomeContato.value)){
+        alert(`O contato: ${inputNomeContato.value} ja foi adicionado`);
+    }else if(numero.includes(inputNumero.value)){
+        alert(`O Numero: ${inputNumero.value} ja foi adicionado`);
+    }else{
+        contatos.push(inputNomeContato.value);
+        numero.push(inputNumero.value);
+        
+        let linha = '<tr>';
+        linha += `<td>${inputNomeContato.value}</td>`;
+        linha += `<td>${inputNumero.value}</td>`;
+        linha += '</tr>';
+
+        linhas += linha;
+    }
+
+    inputNomeContato.value = '';
+    inputNumero.value = '';
+
+}
+
+function atualizaTabela(){
+    
+    const corpoTabela = document.querySelector('tbody');
+    corpoTabela.innerHTML = linhas;
 }
