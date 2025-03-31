@@ -1,59 +1,69 @@
-/*const form = document.getElementById('form-deposito');
 
-function validaNome(nomeCompleto) {
-    const nomeComoArray = nomeCompleto.split(' ');
-    return nomeComoArray.length >= 2;
+const form = document.getElementById('form-atividade');
+let linhas = '';
+const imgAprovado = '<img src="./aprovado.png" alt = "Emoji celebrando" />';
+const imgReprovado = '<img src="./reprovado.png" alt = "Emoji triste" />';
+const atividades = [];
+const notas = [];
+const spamAprovado = '<spam class="resultado aprovado">Aprovado</spam>';
+const spamReprovado = '<spam class="resultado reprovado">Reprovado</spam>';
+const notaMinima = parseFloat(prompt('Digite a nota minima: '))
+
+
+form.addEventListener('submit', function(e){
+    e.preventDefault();
+
+    adicionaLinha();
+    atualizaTabela();
+    atualizaMediaFinal();
+
+});   
+
+function adicionaLinha() {
+
+    const inputNomeAtividade=document.getElementById('nome-atividade');
+    const inputNotaAtividade=document.getElementById('nota-atividade');
+
+    if (atividades.includes(inputNomeAtividade.value)){
+        alert(`A atividade: ${inputNomeAtividade.value} ja foi adicionada`);
+    } else{
+        atividades.push(inputNomeAtividade.value);
+    notas.push(parseFloat(inputNotaAtividade.value));
+
+    let linha = '<tr>';
+    linha += `<td>${inputNomeAtividade.value}</td>`;
+    linha += `<td>${inputNotaAtividade.value}</td>`;
+    linha += `<td>${inputNotaAtividade.value >= notaMinima ? imgAprovado : imgReprovado}</td>`;
+    linha += '</tr>';
+
+    linhas += linha;
+    }
+    
+
+    
+
+    inputNomeAtividade.value = '';
+    inputNotaAtividade.value = '';
+
 }
 
-form.addEventListener('submit', function(e) {
-    let formEValido = false;
-    e.preventDefault();
+function atualizaTabela(){
+    const corpoTabela = document.querySelector('tbody');
+    corpoTabela.innerHTML = linhas;
+}
 
-    const nomeBeneficiario = document.getElementById('nome-beneficiario');
-    const numeroContaBeneficiario = document.getElementById('numero-conta');
-    const valorDeposito = document.getElementById('valor-deposito');
-    const mensagemSucesso = `Montante de: ${valorDeposito.value} depositado para o cliente ${nomeBeneficiario.value} - conta: ${numeroContaBeneficiario.value}`;
-    
-    formEValido = validaNome(nomeBeneficiario.value);
-    if(formEValido) {
-        alert(mensagemSucesso);
+function atualizaMediaFinal(){
+    const media = calculaMediaFinal();
 
-        nomeBeneficiario.value = '';
-        numeroContaBeneficiario.value = '';
-        valorDeposito.value = '';
+    document.getElementById('media-final-valor').innerHTML = media;
+    document.getElementById('media-final-resultado').innerHTML = media >= notaMinima ? spamAprovado : spamReprovado;
 
-    } else{
-        alert("O nome não esta completo!");
+}   
+
+function calculaMediaFinal(){
+    let somaDasNotas =0;
+    for (let i = 0; i< notas.length; i++){
+        somaDasNotas += notas[i];
     }
-})
-
-console.log(form);*/
-
-
-document.getElementById('form-maior-menor').addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    const primeiroNumero = document.getElementById('primeiro-numero');
-    const segundoNumero = document.getElementById('segundo-numero');
-    const numero1 = Number(document.getElementById('primeiro-numero').value); // getElementById.value puxa o conteudo do elemento como string "Number" converte para numero //
-    const numero2 = Number(document.getElementById('segundo-numero').value);
-
-    let mensagem = '';
-
-    if (numero1 > numero2) {
-        mensagem = `O primeiro número, ${numero1}, é maior que o segundo, ${numero2}!`;
-    }
-    else if (numero1 < numero2) {
-        mensagem = `O primeiro número, ${numero1}, é menor que o segundo, ${numero2}!`;
-    }
-    else{
-        mensagem = 'Os dois números são iguais!';
-    }
-
-    alert(mensagem);
-
-    primeiroNumero.value = '';
-    segundoNumero.value = '';
-
-});
-
+    return somaDasNotas / notas.length;
+}
