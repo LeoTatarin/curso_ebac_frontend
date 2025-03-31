@@ -55,7 +55,7 @@ function atualizaTabela(){
 function atualizaMediaFinal(){
     const media = calculaMediaFinal();
 
-    document.getElementById('media-final-valor').innerHTML = media;
+    document.getElementById('media-final-valor').innerHTML = media.toFixed(2);
     document.getElementById('media-final-resultado').innerHTML = media >= notaMinima ? spamAprovado : spamReprovado;
 
 }   
